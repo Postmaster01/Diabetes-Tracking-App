@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2096D59929BFDA3300D73388 /* diabetestrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D59829BFDA3300D73388 /* diabetestrackerApp.swift */; };
+		2096D59B29BFDA3300D73388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D59A29BFDA3300D73388 /* ContentView.swift */; };
+		2096D59D29BFDA3400D73388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2096D59C29BFDA3400D73388 /* Assets.xcassets */; };
+		2096D5A029BFDA3500D73388 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2096D59F29BFDA3500D73388 /* Preview Assets.xcassets */; };
+		2096D5AA29BFDA3500D73388 /* diabetestrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D5A929BFDA3500D73388 /* diabetestrackerTests.swift */; };
+		2096D5B429BFDA3500D73388 /* diabetestrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D5B329BFDA3500D73388 /* diabetestrackerUITests.swift */; };
+		2096D5B629BFDA3500D73388 /* diabetestrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D5B529BFDA3500D73388 /* diabetestrackerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2096D5A629BFDA3500D73388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2096D58D29BFDA3300D73388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2096D59429BFDA3300D73388;
+			remoteInfo = diabetestracker;
+		};
+		2096D5B029BFDA3500D73388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2096D58D29BFDA3300D73388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2096D59429BFDA3300D73388;
+			remoteInfo = diabetestracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2096D59529BFDA3300D73388 /* diabetestracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetestracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2096D59829BFDA3300D73388 /* diabetestrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diabetestrackerApp.swift; sourceTree = "<group>"; };
+		2096D59A29BFDA3300D73388 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2096D59C29BFDA3400D73388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2096D59F29BFDA3500D73388 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2096D5A529BFDA3500D73388 /* diabetestrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diabetestrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2096D5A929BFDA3500D73388 /* diabetestrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diabetestrackerTests.swift; sourceTree = "<group>"; };
+		2096D5AF29BFDA3500D73388 /* diabetestrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diabetestrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2096D5B329BFDA3500D73388 /* diabetestrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diabetestrackerUITests.swift; sourceTree = "<group>"; };
+		2096D5B529BFDA3500D73388 /* diabetestrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diabetestrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2096D59229BFDA3300D73388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2096D5A229BFDA3500D73388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2096D5AC29BFDA3500D73388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2096D58C29BFDA3300D73388 = {
+			isa = PBXGroup;
+			children = (
+				2096D59729BFDA3300D73388 /* diabetestracker */,
+				2096D5A829BFDA3500D73388 /* diabetestrackerTests */,
+				2096D5B229BFDA3500D73388 /* diabetestrackerUITests */,
+				2096D59629BFDA3300D73388 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2096D59629BFDA3300D73388 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2096D59529BFDA3300D73388 /* diabetestracker.app */,
+				2096D5A529BFDA3500D73388 /* diabetestrackerTests.xctest */,
+				2096D5AF29BFDA3500D73388 /* diabetestrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2096D59729BFDA3300D73388 /* diabetestracker */ = {
+			isa = PBXGroup;
+			children = (
+				2096D59829BFDA3300D73388 /* diabetestrackerApp.swift */,
+				2096D59A29BFDA3300D73388 /* ContentView.swift */,
+				2096D59C29BFDA3400D73388 /* Assets.xcassets */,
+				2096D59E29BFDA3500D73388 /* Preview Content */,
+			);
+			path = diabetestracker;
+			sourceTree = "<group>";
+		};
+		2096D59E29BFDA3500D73388 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2096D59F29BFDA3500D73388 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2096D5A829BFDA3500D73388 /* diabetestrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2096D5A929BFDA3500D73388 /* diabetestrackerTests.swift */,
+			);
+			path = diabetestrackerTests;
+			sourceTree = "<group>";
+		};
+		2096D5B229BFDA3500D73388 /* diabetestrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2096D5B329BFDA3500D73388 /* diabetestrackerUITests.swift */,
+				2096D5B529BFDA3500D73388 /* diabetestrackerUITestsLaunchTests.swift */,
+			);
+			path = diabetestrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2096D59429BFDA3300D73388 /* diabetestracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2096D5B929BFDA3500D73388 /* Build configuration list for PBXNativeTarget "diabetestracker" */;
+			buildPhases = (
+				2096D59129BFDA3300D73388 /* Sources */,
+				2096D59229BFDA3300D73388 /* Frameworks */,
+				2096D59329BFDA3300D73388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = diabetestracker;
+			productName = diabetestracker;
+			productReference = 2096D59529BFDA3300D73388 /* diabetestracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2096D5A429BFDA3500D73388 /* diabetestrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2096D5BC29BFDA3500D73388 /* Build configuration list for PBXNativeTarget "diabetestrackerTests" */;
+			buildPhases = (
+				2096D5A129BFDA3500D73388 /* Sources */,
+				2096D5A229BFDA3500D73388 /* Frameworks */,
+				2096D5A329BFDA3500D73388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2096D5A729BFDA3500D73388 /* PBXTargetDependency */,
+			);
+			name = diabetestrackerTests;
+			productName = diabetestrackerTests;
+			productReference = 2096D5A529BFDA3500D73388 /* diabetestrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2096D5AE29BFDA3500D73388 /* diabetestrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2096D5BF29BFDA3500D73388 /* Build configuration list for PBXNativeTarget "diabetestrackerUITests" */;
+			buildPhases = (
+				2096D5AB29BFDA3500D73388 /* Sources */,
+				2096D5AC29BFDA3500D73388 /* Frameworks */,
+				2096D5AD29BFDA3500D73388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2096D5B129BFDA3500D73388 /* PBXTargetDependency */,
+			);
+			name = diabetestrackerUITests;
+			productName = diabetestrackerUITests;
+			productReference = 2096D5AF29BFDA3500D73388 /* diabetestrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2096D58D29BFDA3300D73388 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2096D59429BFDA3300D73388 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					2096D5A429BFDA3500D73388 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2096D59429BFDA3300D73388;
+					};
+					2096D5AE29BFDA3500D73388 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2096D59429BFDA3300D73388;
+					};
+				};
+			};
+			buildConfigurationList = 2096D59029BFDA3300D73388 /* Build configuration list for PBXProject "diabetestracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2096D58C29BFDA3300D73388;
+			productRefGroup = 2096D59629BFDA3300D73388 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2096D59429BFDA3300D73388 /* diabetestracker */,
+				2096D5A429BFDA3500D73388 /* diabetestrackerTests */,
+				2096D5AE29BFDA3500D73388 /* diabetestrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2096D59329BFDA3300D73388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2096D5A029BFDA3500D73388 /* Preview Assets.xcassets in Resources */,
+				2096D59D29BFDA3400D73388 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2096D5A329BFDA3500D73388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2096D5AD29BFDA3500D73388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2096D59129BFDA3300D73388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2096D59B29BFDA3300D73388 /* ContentView.swift in Sources */,
+				2096D59929BFDA3300D73388 /* diabetestrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2096D5A129BFDA3500D73388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2096D5AA29BFDA3500D73388 /* diabetestrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2096D5AB29BFDA3500D73388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2096D5B629BFDA3500D73388 /* diabetestrackerUITestsLaunchTests.swift in Sources */,
+				2096D5B429BFDA3500D73388 /* diabetestrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2096D5A729BFDA3500D73388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2096D59429BFDA3300D73388 /* diabetestracker */;
+			targetProxy = 2096D5A629BFDA3500D73388 /* PBXContainerItemProxy */;
+		};
+		2096D5B129BFDA3500D73388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2096D59429BFDA3300D73388 /* diabetestracker */;
+			targetProxy = 2096D5B029BFDA3500D73388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2096D5B729BFDA3500D73388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2096D5B829BFDA3500D73388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2096D5BA29BFDA3500D73388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"diabetestracker/Preview Content\"";
+				DEVELOPMENT_TEAM = AFYF48K278;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eduardo-test-app.diabetestracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2096D5BB29BFDA3500D73388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"diabetestracker/Preview Content\"";
+				DEVELOPMENT_TEAM = AFYF48K278;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eduardo-test-app.diabetestracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2096D5BD29BFDA3500D73388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFYF48K278;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eduardo-test-app.diabetestrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diabetestracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/diabetestracker";
+			};
+			name = Debug;
+		};
+		2096D5BE29BFDA3500D73388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFYF48K278;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eduardo-test-app.diabetestrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diabetestracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/diabetestracker";
+			};
+			name = Release;
+		};
+		2096D5C029BFDA3500D73388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFYF48K278;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eduardo-test-app.diabetestrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = diabetestracker;
+			};
+			name = Debug;
+		};
+		2096D5C129BFDA3500D73388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFYF48K278;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eduardo-test-app.diabetestrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = diabetestracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2096D59029BFDA3300D73388 /* Build configuration list for PBXProject "diabetestracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2096D5B729BFDA3500D73388 /* Debug */,
+				2096D5B829BFDA3500D73388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2096D5B929BFDA3500D73388 /* Build configuration list for PBXNativeTarget "diabetestracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2096D5BA29BFDA3500D73388 /* Debug */,
+				2096D5BB29BFDA3500D73388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2096D5BC29BFDA3500D73388 /* Build configuration list for PBXNativeTarget "diabetestrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2096D5BD29BFDA3500D73388 /* Debug */,
+				2096D5BE29BFDA3500D73388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2096D5BF29BFDA3500D73388 /* Build configuration list for PBXNativeTarget "diabetestrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2096D5C029BFDA3500D73388 /* Debug */,
+				2096D5C129BFDA3500D73388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2096D58D29BFDA3300D73388 /* Project object */;
+}
