@@ -12,6 +12,7 @@ struct ContentView: View {
         
         VStack {
             Spacer()
+            Spacer()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
