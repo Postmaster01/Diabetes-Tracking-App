@@ -1,0 +1,34 @@
+var isyes = "yes"
+var isno = "no"
+
+print("Have you eaten within the last 8 hours?")
+
+if let inputData = readLine() {
+  if inputData.lowercased() == "yes"{
+  print("subject is Fasting")
+//fasting or not eating decreases the blood sugar threashold by 25 - 35 mg/dL
+    
+  }
+  
+  else {
+  print("subject is not Fasting")
+//a regular blood glucose reading is between 100 - 125 mg/dL
+}
+
+}
+
+
+
+print("Please enter mmol/L reading")
+var num1 = Float(readLine()!)!
+
+var sum = num1 * 18
+print("Your current blood glucose is \(sum) mg/dL")
+
+if sum <= 70{
+  print("Your blood sugar is low")
+
+}
+else{
+  print("Your blood sugar is good")
+}
