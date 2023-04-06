@@ -17,8 +17,6 @@ if let inputData = readLine() {
 
 }
 
-
-
 print("Please enter mmol/L reading")
 var num1 = Float(readLine()!)!
 
