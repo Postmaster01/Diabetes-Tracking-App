@@ -18,35 +18,48 @@ struct SignUpView: View {
     @State private var height = ""
     @State private var dt = ""
     @State private var bmi = ""
+    let name = "lalo"
     
     var body: some View {
-        NavigationStack{
+        VStack {
+            Text("Your Information:")
+                .padding(.bottom)
+                .offset(y:-50)
+                .font(.largeTitle)
             Group {
                 TextField("First Name", text: $fn)
                 TextField("Last Name", text: $ln)
+            }
+            .textFieldStyle(.roundedBorder)
+            .padding(.horizontal)
+            
+            Group {
                 TextField("Weight", text: $weight)
                 TextField("Height", text: $height)
                 TextField("Diabetes Type", text: $dt)
                 TextField("BMI", text: $bmi)
                 
+         
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
+            .keyboardType(.numbersAndPunctuation)
             
         }
         
         Button {
-            // do something
+            // save data to cloud
         } label: {
-            Text("Continue")
+            Text("Save")
         }
-            .buttonStyle(.borderedProminent)
-            .tint(Color("APPColor"))
-            .font(.title2)
-            .padding(.top)
-            .navigationBarTitleDisplayMode(.inline)
-
+        .buttonStyle(.borderedProminent)
+        .tint(Color("APPColor"))
+        .font(.title2)
+        .padding(.top)
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
+    
 }
 
 struct SignUpView_Previews: PreviewProvider {

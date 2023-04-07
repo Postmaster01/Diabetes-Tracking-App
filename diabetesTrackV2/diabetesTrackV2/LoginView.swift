@@ -61,11 +61,7 @@ struct LoginView: View {
                     Text("Sign Up")
                 }
                 .padding(.trailing)
-                .navigationDestination(for: String.self) { view in
-                    if view == "SignUpView" {
-                        SignUpView()
-                    }
-                }
+
                 
                 Button {
                     login()
@@ -73,11 +69,7 @@ struct LoginView: View {
                     Text("Log In")
                 }
                 .padding(.leading)
-                .navigationDestination(for: String.self) { view in
-                    if view == "HomeView" {
-                        HomeView()
-                    }
-                }
+                
 
             }
             .disabled(buttonDisabled)
@@ -86,11 +78,11 @@ struct LoginView: View {
             .font(.title2)
             .padding(.top)
             .navigationBarTitleDisplayMode(.inline)
-            /*.navigationDestination(for: String.self) { view in
+            .navigationDestination(for: String.self) { view in
                 if view == "HomeView" {
                     HomeView()
                 }
-            }*/
+            }
             
         }
         .alert(alertMessage, isPresented: $showingAlert) {
@@ -118,7 +110,7 @@ struct LoginView: View {
                 showingAlert = true
             } else {
                 print("Registration Success")
-                path.append("SignUpView")
+                path.append("HomeView")
             }
         }
     }
@@ -131,6 +123,7 @@ struct LoginView: View {
                 showingAlert = true
             } else {
                 print("Login Success")
+                
                 path.append("HomeView")
             }
         }

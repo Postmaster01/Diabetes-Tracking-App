@@ -12,35 +12,39 @@ struct HomeView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        
-        List {
-            Text("Biometric data goes here")
+        VStack{
+            NavigationLink {
+                SignUpView()
+            } label: {
+                Image(systemName: "person")
+            }
         }
-        .listStyle(.plain)
         .navigationBarBackButtonHidden()
         .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink {
+                    SignUpView()
+                } label: {
+                    Image(systemName: "person")
+                }
+
+
+            }
+            
             ToolbarItem(placement: .navigationBarLeading) {
                 Button("Sign Out") {
                     do {
                         try Auth.auth().signOut()
-                        print("log out success")
+                        print("Log out success")
                         dismiss()
                     } catch {
-                        print("ERROR: Could not sign out")
+                        print("ERROR: could not sign out")
                     }
                 }
-                
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    //todo: add item
-                } label: {
-                    Image(systemName: "plus")
-                }
 
-                
             }
         }
+
     }
 }
 
