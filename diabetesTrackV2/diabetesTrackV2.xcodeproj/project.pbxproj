@@ -10,6 +10,7 @@
 		202C394329DE2C00006FE708 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C394229DE2C00006FE708 /* HomeView.swift */; };
 		202C394529DE32ED006FE708 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C394429DE32ED006FE708 /* User.swift */; };
 		202C394729DE37B1006FE708 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C394629DE37B1006FE708 /* SignUpView.swift */; };
+		207C06F129DFCE8300329802 /* Basic Calculations in Resources */ = {isa = PBXBuildFile; fileRef = 207C06F029DFCE8300329802 /* Basic Calculations */; };
 		2081B99529D6611300B491CD /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081B99429D6611300B491CD /* login.swift */; };
 		2096D5E929C002FD00D73388 /* diabetesTrackV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D5E829C002FD00D73388 /* diabetesTrackV2App.swift */; };
 		2096D5EB29C002FD00D73388 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096D5EA29C002FD00D73388 /* LoginView.swift */; };
@@ -24,6 +25,7 @@
 		202C394229DE2C00006FE708 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		202C394429DE32ED006FE708 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		202C394629DE37B1006FE708 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		207C06F029DFCE8300329802 /* Basic Calculations */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Basic Calculations"; sourceTree = "<group>"; };
 		2081B99429D6611300B491CD /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		2096D5E529C002FD00D73388 /* diabetesTrackV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetesTrackV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2096D5E829C002FD00D73388 /* diabetesTrackV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diabetesTrackV2App.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				2081B99429D6611300B491CD /* login.swift */,
+				207C06F029DFCE8300329802 /* Basic Calculations */,
 				2096D5E829C002FD00D73388 /* diabetesTrackV2App.swift */,
 				202C394429DE32ED006FE708 /* User.swift */,
 				2096D5EA29C002FD00D73388 /* LoginView.swift */,
@@ -153,6 +156,7 @@
 			files = (
 				2096D5F029C0030000D73388 /* Preview Assets.xcassets in Resources */,
 				2096D5ED29C0030000D73388 /* Assets.xcassets in Resources */,
+				207C06F129DFCE8300329802 /* Basic Calculations in Resources */,
 				20D8368F29DD165800F85A17 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
