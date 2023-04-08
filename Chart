@@ -1,0 +1,33 @@
+import UIKit
+import Charts
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var chartView: LineChartView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Sample data for the chart
+        let dataEntries = [
+            ChartDataEntry(x: 0, y: 5),
+            ChartDataEntry(x: 1, y: 10),
+            ChartDataEntry(x: 2, y: 7),
+            ChartDataEntry(x: 3, y: 12),
+            ChartDataEntry(x: 4, y: 9),
+            ChartDataEntry(x: 5, y: 15)
+        ]
+
+        // Set up the line chart data set
+        let chartDataSet = LineChartDataSet(entries: dataEntries, label: "Sample Data")
+        chartDataSet.colors = [UIColor.blue]
+
+        // Set up the line chart data
+        let chartData = LineChartData(dataSet: chartDataSet)
+
+        // Set up the chart view
+        chartView.data = chartData
+        chartView.xAxis.labelPosition = .bottom
+        chartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0)
+    }
+}
