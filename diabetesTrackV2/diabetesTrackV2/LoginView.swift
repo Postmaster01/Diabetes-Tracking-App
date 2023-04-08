@@ -22,7 +22,13 @@ struct LoginView: View {
     
     var body: some View {
         NavigationStack (path: $path) {
+            Text("DiaLog")
+                .font(.largeTitle)
+                .foregroundColor(Color("APPColor"))
+                .fontWeight(.bold)
+                .offset(y:-50)
             Group {
+                
                 TextField("Email", text: $email)
                     .keyboardType(.emailAddress)
                     .autocorrectionDisabled()

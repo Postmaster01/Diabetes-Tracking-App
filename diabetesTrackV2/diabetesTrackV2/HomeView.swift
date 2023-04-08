@@ -13,11 +13,7 @@ struct HomeView: View {
     
     var body: some View {
         VStack{
-            NavigationLink {
-                SignUpView()
-            } label: {
-                Image(systemName: "person")
-            }
+            Text("Calculator")
         }
         .navigationBarBackButtonHidden()
         .toolbar {
@@ -31,6 +27,7 @@ struct HomeView: View {
 
             }
             
+            
             ToolbarItem(placement: .navigationBarLeading) {
                 Button("Sign Out") {
                     do {
@@ -41,9 +38,13 @@ struct HomeView: View {
                         print("ERROR: could not sign out")
                     }
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(Color("APPColor"))
+                .foregroundColor(.white)
 
             }
         }
+        .foregroundColor(Color("APPColor"))
 
     }
 }
