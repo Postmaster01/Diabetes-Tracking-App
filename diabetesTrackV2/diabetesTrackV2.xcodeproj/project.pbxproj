@@ -21,6 +21,7 @@
 		20D8368B29DD157200F85A17 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 20D8368A29DD157200F85A17 /* FirebaseAuth */; };
 		20D8368D29DD157200F85A17 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 20D8368C29DD157200F85A17 /* FirebaseFirestore */; };
 		20D8368F29DD165800F85A17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D8368E29DD165800F85A17 /* GoogleService-Info.plist */; };
+		20F8B01229E212580043AFC6 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8B01129E212580043AFC6 /* RadioButtonField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		20C83BDE29E0F409008D6B8A /* Chart */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Chart; path = ../../Chart; sourceTree = "<group>"; };
 		20C83BE029E0F42F008D6B8A /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		20D8368E29DD165800F85A17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20F8B01129E212580043AFC6 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				2096D5EA29C002FD00D73388 /* LoginView.swift */,
 				202C394629DE37B1006FE708 /* SignUpView.swift */,
 				20C83BDE29E0F409008D6B8A /* Chart */,
+				20F8B01129E212580043AFC6 /* RadioButtonField.swift */,
 				202C394229DE2C00006FE708 /* HomeView.swift */,
 				20C83BE029E0F42F008D6B8A /* LineChartView.swift */,
 				2096D5EC29C0030000D73388 /* Assets.xcassets */,
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F8B01229E212580043AFC6 /* RadioButtonField.swift in Sources */,
 				2096D5EB29C002FD00D73388 /* LoginView.swift in Sources */,
 				202C394329DE2C00006FE708 /* HomeView.swift in Sources */,
 				2081B99529D6611300B491CD /* login.swift in Sources */,

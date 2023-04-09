@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 
 struct LoginView: View {
+    
     enum Field {
         case email, password
     }
@@ -17,7 +18,7 @@ struct LoginView: View {
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @State private var buttonDisabled = true
-    @State private var path = NavigationPath()
+    @State var path = NavigationPath()
     @FocusState private var focusField: Field?
     
     var body: some View {
@@ -131,6 +132,7 @@ struct LoginView: View {
                 print("Login Success")
                 
                 path.append("HomeView")
+            
             }
         }
     }

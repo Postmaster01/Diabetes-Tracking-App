@@ -14,7 +14,8 @@ struct Amount: Identifiable {
     var amount: Double
     var id = UUID()
 }
-struct BarChart: View {
+struct LineChartView: View {
+    @Environment(\.dismiss) private var dismiss
     
     var data: [Amount] = [
         .init(day: "Sunday", amount: 83.4),
@@ -26,6 +27,7 @@ struct BarChart: View {
         .init(day: "Saturday", amount: 82.3)
         
     ]
+    
     
     var body: some View {
         Chart (content: {
@@ -62,11 +64,21 @@ struct BarChart: View {
         .frame(width: 300, height: 300)
         .chartXAxisLabel("Day", position: .automatic, alignment: .center, spacing: 15)
         .chartYAxisLabel("mmol", position: .topTrailing, alignment: .bottomLeading, spacing: 15)
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Return")
+                }
+
+            }
+        }
         
-        //let dataSet = LineChartDataSet(values: content, label: "Foo")
-        //dataSet.mode = .cubicBezier
         
     }
+        
 }
 /*struct LineChartView: View {
 
@@ -108,7 +120,9 @@ struct BarChart: View {
 
 struct LineChartView_Previews: PreviewProvider {
     static var previews: some View {
-        //LineChartView()
-        BarChart()
+        NavigationStack {
+            LineChartView()
+        }
+        
     }
 }

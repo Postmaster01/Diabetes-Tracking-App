@@ -45,10 +45,11 @@ struct SignUpView: View {
             .padding(.horizontal)
             .keyboardType(.numbersAndPunctuation)
             
+            
         }
         
         Button {
-            // save data to cloud
+            save()
         } label: {
             Text("Save")
         }
@@ -60,6 +61,14 @@ struct SignUpView: View {
         
     }
     
+    func save() {
+        if !fn.isEmpty {
+            fn = fn
+        }
+    }
+        
+            
+        
 }
 
 struct SignUpView_Previews: PreviewProvider {
@@ -70,3 +79,5 @@ struct SignUpView_Previews: PreviewProvider {
 
     }
 }
+
+
