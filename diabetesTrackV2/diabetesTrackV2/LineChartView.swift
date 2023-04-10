@@ -15,7 +15,6 @@ struct Amount: Identifiable {
     var id = UUID()
 }
 struct LineChartView: View {
-    @Environment(\.dismiss) private var dismiss
     
     var data: [Amount] = [
         .init(day: "Sunday", amount: 83.4),
@@ -30,51 +29,51 @@ struct LineChartView: View {
     
     
     var body: some View {
-        Chart (content: {
-            LineMark(
-                x: .value("Month", data[0].day),
-                y: .value("Total", data[0].amount)
-            )
-            LineMark(
-                 x: .value("Month", data[1].day),
-                 y: .value("Total", data[1].amount)
-            )
-            LineMark(
-                 x: .value("Month", data[2].day),
-                 y: .value("Total", data[2].amount)
-            )
-            LineMark(
-                x: .value("Month", data[3].day),
-                y: .value("Total", data[3].amount)
-            )
-            LineMark(
-                x: .value("Month", data[4].day),
-                y: .value("Total", data[4].amount)
-            )
-            LineMark(
-                x: .value("Month", data[5].day),
-                y: .value("Total", data[5].amount)
-            )
-            LineMark(
-                x: .value("Month", data[6].day),
-                y: .value("Total", data[6].amount)
-            )
-        })
-        .padding()
-        .frame(width: 300, height: 300)
-        .chartXAxisLabel("Day", position: .automatic, alignment: .center, spacing: 15)
-        .chartYAxisLabel("mmol", position: .topTrailing, alignment: .bottomLeading, spacing: 15)
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    dismiss()
-                } label: {
-                    Text("Return")
-                }
+        
+        VStack {
+            Text("Graph")
+                //.foregroundColor(Color("APPColor"))
+                .font(.largeTitle.bold())
+               
 
-            }
+            
+            Chart (content: {
+                LineMark(
+                    x: .value("Month", data[0].day),
+                    y: .value("Total", data[0].amount)
+                )
+                LineMark(
+                     x: .value("Month", data[1].day),
+                     y: .value("Total", data[1].amount)
+                )
+                LineMark(
+                     x: .value("Month", data[2].day),
+                     y: .value("Total", data[2].amount)
+                )
+                LineMark(
+                    x: .value("Month", data[3].day),
+                    y: .value("Total", data[3].amount)
+                )
+                LineMark(
+                    x: .value("Month", data[4].day),
+                    y: .value("Total", data[4].amount)
+                )
+                LineMark(
+                    x: .value("Month", data[5].day),
+                    y: .value("Total", data[5].amount)
+                )
+                LineMark(
+                    x: .value("Month", data[6].day),
+                    y: .value("Total", data[6].amount)
+                )
+            })
+            .padding()
+            .frame(width: 400, height: 400)
+            .chartXAxisLabel("Day", position: .automatic, alignment: .center, spacing: 15)
+            .chartYAxisLabel("mmol", position: .topTrailing, alignment: .bottomLeading, spacing: 15)
+        .navigationBarBackButtonHidden()
         }
+        
         
         
     }

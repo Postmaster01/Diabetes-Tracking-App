@@ -10,7 +10,6 @@ import Firebase
 
 struct SignUpView: View {
     
-    @Environment(\.dismiss) private var dismiss
     @State private var fn = ""
     @State private var ln = ""
     @State private var age = ""
@@ -18,14 +17,12 @@ struct SignUpView: View {
     @State private var height = ""
     @State private var dt = ""
     @State private var bmi = ""
-    let name = "lalo"
     
     var body: some View {
         VStack {
             Text("Your Information:")
                 .padding(.bottom)
-                .offset(y:-50)
-                .font(.largeTitle)
+                .font(.largeTitle.bold())
             Group {
                 TextField("First Name", text: $fn)
                 TextField("Last Name", text: $ln)
@@ -38,27 +35,20 @@ struct SignUpView: View {
                 TextField("Height", text: $height)
                 TextField("Diabetes Type", text: $dt)
                 TextField("BMI", text: $bmi)
-                
-         
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
             .keyboardType(.numbersAndPunctuation)
             
-            
+            Button {
+                //
+            } label: {
+                Text("Save")
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(Color("APPColor"))
+            .font(.title3)
         }
-        
-        Button {
-            save()
-        } label: {
-            Text("Save")
-        }
-        .buttonStyle(.borderedProminent)
-        .tint(Color("APPColor"))
-        .font(.title2)
-        .padding(.top)
-        .navigationBarTitleDisplayMode(.inline)
-        
     }
     
     func save() {
