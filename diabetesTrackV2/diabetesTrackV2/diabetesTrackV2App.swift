@@ -10,7 +10,7 @@ import Firebase
 
 @main
 struct diabetesTrackV2App: App {
-    
+    @StateObject var userVM = UserViewModel()
     init() {
         FirebaseApp.configure()
     }
@@ -18,6 +18,7 @@ struct diabetesTrackV2App: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(userVM)
         }
     }
 }

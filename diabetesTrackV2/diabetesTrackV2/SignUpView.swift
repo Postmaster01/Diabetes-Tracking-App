@@ -9,14 +9,9 @@ import SwiftUI
 import Firebase
 
 struct SignUpView: View {
-    
-    @State private var fn = ""
-    @State private var ln = ""
-    @State private var age = ""
-    @State private var weight = ""
-    @State private var height = ""
-    @State private var dt = ""
-    @State private var bmi = ""
+    @EnvironmentObject var userVM: UserViewModel
+    @State var user: User
+   
     
     var body: some View {
         VStack {
@@ -24,24 +19,32 @@ struct SignUpView: View {
                 .padding(.bottom)
                 .font(.largeTitle.bold())
             Group {
-                TextField("First Name", text: $fn)
-                TextField("Last Name", text: $ln)
+                TextField("First Name", text: $user.fn)
+                TextField("Last Name", text: $user.ln)
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
             
             Group {
-                TextField("Weight", text: $weight)
-                TextField("Height", text: $height)
-                TextField("Diabetes Type", text: $dt)
-                TextField("BMI", text: $bmi)
+                TextField("Age", text: $user.age)
+                TextField("Weight", text: $user.weight)
+                TextField("Height", text: $user.height)
+                TextField("Diabetes Type", text: $user.dt)
+                TextField("BMI", text: $user.bmi)
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
             .keyboardType(.numbersAndPunctuation)
             
             Button {
-                //
+                Task {
+                    let success = await userVM.saveUser(user: user)
+                    if success {
+                        print("success")
+                    } else {
+                        print("Error saving")
+                    }
+                }
             } label: {
                 Text("Save")
             }
@@ -51,11 +54,7 @@ struct SignUpView: View {
         }
     }
     
-    func save() {
-        if !fn.isEmpty {
-            fn = fn
-        }
-    }
+    
         
             
         
@@ -64,7 +63,8 @@ struct SignUpView: View {
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            SignUpView()
+            SignUpView(user: User())
+                .environmentObject(UserViewModel())
         }
 
     }

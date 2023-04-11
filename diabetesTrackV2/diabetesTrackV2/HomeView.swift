@@ -23,7 +23,7 @@ struct HomeView: View {
                     Image(systemName: "arrow.up.right")
                     Text("Graph")
                 }
-            SignUpView()
+            SignUpView(user: User())
                 .tabItem {
                     Image(systemName: "person")
                     Text("Information")

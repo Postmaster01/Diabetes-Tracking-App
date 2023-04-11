@@ -2,20 +2,23 @@
 //  User.swift
 //  diabetesTrackV2
 //
-//  Created by Eduardo Reyes on 4/5/23.
+//  Created by Eduardo Reyes on 4/10/23.
 //
 
-/*import Foundation
+import Foundation
 import FirebaseFirestoreSwift
 
 struct User: Identifiable, Codable {
     @DocumentID var id: String?
-    var name = ""
+    var fn = ""
+    var ln = ""
     var age = ""
+    var weight = ""
+    var height = ""
+    var dt = ""
+    var bmi = ""
     
     var dictionary: [String: Any] {
-        return ["name": name, "age": age]
+        return ["fn": fn, "ln": ln, "age": age, "weight": weight, "height": height, "dt": dt, "bmi": bmi]
     }
 }
-*/
-
