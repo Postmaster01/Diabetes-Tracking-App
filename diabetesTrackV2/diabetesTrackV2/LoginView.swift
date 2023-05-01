@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Firebase
+import FirebaseStorage
+
 
 struct LoginView: View {
     
@@ -116,26 +118,32 @@ struct LoginView: View {
                 alertMessage = "LOGIN ERROR: \(error.localizedDescription)"
                 showingAlert = true
             } else {
-                print("Registration Success")
+                print("Registration Success \(result?.user.uid ?? "")")
+                
+                
+                
                 path.append("HomeView")
+                
             }
         }
     }
     
     func login() {
+        
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
                 print("LOGIN ERROR: \(error.localizedDescription)")
                 alertMessage = "LOGIN ERROR: \(error.localizedDescription)"
                 showingAlert = true
             } else {
-                print("Login Success")
+                print("Login Success as \(result?.user.uid ?? "")")
                 
                 path.append("HomeView")
             
             }
         }
     }
+    
 }
 
 struct LoginView_Previews: PreviewProvider {

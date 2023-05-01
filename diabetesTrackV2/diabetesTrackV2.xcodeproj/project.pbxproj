@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201B518729F3134C00FADB42 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B518629F3134C00FADB42 /* InfoView.swift */; };
 		202C394329DE2C00006FE708 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C394229DE2C00006FE708 /* CalculatorView.swift */; };
 		202C394729DE37B1006FE708 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C394629DE37B1006FE708 /* SignUpView.swift */; };
 		207C06F129DFCE8300329802 /* Basic Calculations in Resources */ = {isa = PBXBuildFile; fileRef = 207C06F029DFCE8300329802 /* Basic Calculations */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201B518629F3134C00FADB42 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		202C394229DE2C00006FE708 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		202C394629DE37B1006FE708 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		207C06F029DFCE8300329802 /* Basic Calculations */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Basic Calculations"; sourceTree = "<group>"; };
@@ -93,14 +95,15 @@
 				207C06F029DFCE8300329802 /* Basic Calculations */,
 				2096D5E829C002FD00D73388 /* diabetesTrackV2App.swift */,
 				2094AEED29E4DF0C00F13F0A /* User.swift */,
-				2094AEEF29E4E95E00F13F0A /* UserViewModel.swift */,
-				2096D5EA29C002FD00D73388 /* LoginView.swift */,
 				202C394629DE37B1006FE708 /* SignUpView.swift */,
+				2096D5EA29C002FD00D73388 /* LoginView.swift */,
+				201B518629F3134C00FADB42 /* InfoView.swift */,
+				202C394229DE2C00006FE708 /* CalculatorView.swift */,
+				20C83BE029E0F42F008D6B8A /* LineChartView.swift */,
+				2094AEE429E4B7D400F13F0A /* HomeView.swift */,
+				2094AEEF29E4E95E00F13F0A /* UserViewModel.swift */,
 				20C83BDE29E0F409008D6B8A /* Chart */,
 				20F8B01129E212580043AFC6 /* RadioButtonField.swift */,
-				202C394229DE2C00006FE708 /* CalculatorView.swift */,
-				2094AEE429E4B7D400F13F0A /* HomeView.swift */,
-				20C83BE029E0F42F008D6B8A /* LineChartView.swift */,
 				2096D5EC29C0030000D73388 /* Assets.xcassets */,
 				20D8368E29DD165800F85A17 /* GoogleService-Info.plist */,
 				2096D5EE29C0030000D73388 /* Preview Content */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2094AEE529E4B7D400F13F0A /* HomeView.swift in Sources */,
+				201B518729F3134C00FADB42 /* InfoView.swift in Sources */,
 				20F8B01229E212580043AFC6 /* RadioButtonField.swift in Sources */,
 				2096D5EB29C002FD00D73388 /* LoginView.swift in Sources */,
 				2094AEF029E4E95E00F13F0A /* UserViewModel.swift in Sources */,

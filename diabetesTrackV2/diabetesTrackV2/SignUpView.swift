@@ -7,30 +7,38 @@
 
 import SwiftUI
 import Firebase
+import FirebaseFirestoreSwift
+import FirebaseAuth
 
 struct SignUpView: View {
     @EnvironmentObject var userVM: UserViewModel
     @State var user: User
-   
+    @State var fn = ""
+    @State var CurrentUser = []
+    
+    
+    
     
     var body: some View {
         VStack {
+            
+            
             Text("Your Information:")
                 .padding(.bottom)
                 .font(.largeTitle.bold())
             Group {
-                TextField("First Name", text: $user.fn)
-                TextField("Last Name", text: $user.ln)
+                TextField("First Name: \(userVM.user.fn)", text: $user.fn)
+                TextField("Last Name: \(userVM.user.ln)", text: $user.ln)
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
             
             Group {
-                TextField("Age", text: $user.age)
-                TextField("Weight", text: $user.weight)
-                TextField("Height", text: $user.height)
-                TextField("Diabetes Type", text: $user.dt)
-                TextField("BMI", text: $user.bmi)
+                TextField("Age: \(userVM.user.age)", text: $user.age)
+                TextField("Weight: lbs \(userVM.user.weight)", text: $user.weight)
+                TextField("Height: \(userVM.user.height)", text: $user.height)
+                TextField("Diabetes Type: \(userVM.user.dt)", text: $user.dt)
+                TextField("BMI: \(userVM.user.bmi)", text: $user.bmi)
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
@@ -46,18 +54,16 @@ struct SignUpView: View {
                     }
                 }
             } label: {
-                Text("Save")
+                Text("Save/Update")
             }
             .buttonStyle(.borderedProminent)
             .tint(Color("APPColor"))
             .font(.title3)
         }
+        .onAppear() {
+            self.userVM.getData()
+        }
     }
-    
-    
-        
-            
-        
 }
 
 struct SignUpView_Previews: PreviewProvider {

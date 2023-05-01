@@ -13,12 +13,12 @@ struct HomeView: View {
     
     var body: some View {
         TabView {
-            CalculatorView()
+            CalculatorView(mmolO: MMOL())
                 .tabItem {
                     Image(systemName: "plus.square.fill")
                     Text("Calculator")
                 }
-            LineChartView()
+            LineChartView(user: User())
                 .tabItem {
                     Image(systemName: "arrow.up.right")
                     Text("Graph")

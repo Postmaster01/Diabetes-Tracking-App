@@ -15,18 +15,8 @@ struct Amount: Identifiable {
     var id = UUID()
 }
 struct LineChartView: View {
-    
-    var data: [Amount] = [
-        .init(day: "Sunday", amount: 83.4),
-        .init(day: "Monday", amount: 78.4),
-        .init(day: "Tuesday", amount: 76.8),
-        .init(day: "Wednesday", amount: 82.7),
-        .init(day: "Thursday", amount: 89.3),
-        .init(day: "Friday", amount: 86.9),
-        .init(day: "Saturday", amount: 82.3)
-        
-    ]
-    
+    @EnvironmentObject var userVM: UserViewModel
+    @State var user: User
     
     var body: some View {
         
@@ -34,44 +24,31 @@ struct LineChartView: View {
             Text("Graph")
                 //.foregroundColor(Color("APPColor"))
                 .font(.largeTitle.bold())
+            
+            
                
 
             
             Chart (content: {
-                LineMark(
-                    x: .value("Month", data[0].day),
-                    y: .value("Total", data[0].amount)
-                )
-                LineMark(
-                     x: .value("Month", data[1].day),
-                     y: .value("Total", data[1].amount)
-                )
-                LineMark(
-                     x: .value("Month", data[2].day),
-                     y: .value("Total", data[2].amount)
-                )
-                LineMark(
-                    x: .value("Month", data[3].day),
-                    y: .value("Total", data[3].amount)
-                )
-                LineMark(
-                    x: .value("Month", data[4].day),
-                    y: .value("Total", data[4].amount)
-                )
-                LineMark(
-                    x: .value("Month", data[5].day),
-                    y: .value("Total", data[5].amount)
-                )
-                LineMark(
-                    x: .value("Month", data[6].day),
-                    y: .value("Total", data[6].amount)
-                )
+                ForEach(userVM.mmolD) {item in
+                    let stringdate = item.date
+                    let dateformatter = DateFormatter()
+                    let dateDate = dateformatter.date(from: stringdate)
+                    PointMark(
+                        x:.value("\(item.intDate)", item.date),
+                        y:.value("\(item.mmolR)", item.mmolR))
+                }
+                
             })
+            .frame(maxWidth: .infinity)
+            .frame(height: 300)
             .padding()
-            .frame(width: 400, height: 400)
-            .chartXAxisLabel("Day", position: .automatic, alignment: .center, spacing: 15)
+            
             .chartYAxisLabel("mmol", position: .topTrailing, alignment: .bottomLeading, spacing: 15)
         .navigationBarBackButtonHidden()
+        }
+        .onAppear() {
+            self.userVM.getAllMmol()
         }
         
         
@@ -120,7 +97,7 @@ struct LineChartView: View {
 struct LineChartView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            LineChartView()
+            LineChartView(user: User())
         }
         
     }

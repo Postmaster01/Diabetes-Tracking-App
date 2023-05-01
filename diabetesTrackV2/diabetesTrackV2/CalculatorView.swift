@@ -10,6 +10,8 @@ import Firebase
 
 struct CalculatorView: View {
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var userVM: UserViewModel
+    @State var mmolO: MMOL
     @State var answer = ""
     @State var mmol = ""
     @State var mgdlCalc = ""
@@ -18,7 +20,9 @@ struct CalculatorView: View {
     @State var text = ""
     
     
+    
     var body: some View {
+       
         
             VStack{
                     Text("Calculator")
@@ -71,11 +75,27 @@ struct CalculatorView: View {
                             .keyboardType(.numbersAndPunctuation)
                             .padding(.bottom)
                         
-                        Button {
-                            calculate()
+                        HStack {
+                            Button {
+                                calculate()
+                                
+                            } label: {
+                                Text("Calculate")
+                            }
                             
-                        } label: {
-                            Text("Calculate")
+                            Button {
+                                Task {
+                                    let success = await userVM.setMmol(mmol: mmolO)
+                                    if success {
+                                        print("success")
+                                    } else {
+                                        print("failed saving")
+                                    }
+                                }
+                            } label: {
+                                Text("Save Value")
+                            }
+
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(Color("APPColor"))
@@ -107,11 +127,20 @@ struct CalculatorView: View {
        
     func calculate() {
         if !mmol.isEmpty {
+            let date = Date()
+            let timeInterval = date.timeIntervalSince1970
+            let intTime = Int(timeInterval)
+            let df = DateFormatter()
+            df.dateStyle = DateFormatter.Style.short
+            let curDate = df.string(from: date)
             let mmolNum = Double(mmol) ?? 0
             let mgdlNum = mmolNum * 18
             
             mgdlCalc = String(mgdlNum)
-            
+            mmolO.mmolR = mgdlNum
+            mmolO.date = curDate
+            mmolO.intDate = intTime
+            print("\(df)")
             if mgdlNum <= 70 {
                 text = "Your blood sugar is low"
             } else {
@@ -132,7 +161,8 @@ struct CalculatorView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CalculatorView()
+            CalculatorView(mmolO: MMOL())
+                .environmentObject(UserViewModel())
         }
         
     }
