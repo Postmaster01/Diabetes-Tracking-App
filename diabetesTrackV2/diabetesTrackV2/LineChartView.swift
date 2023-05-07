@@ -35,7 +35,7 @@ struct LineChartView: View {
                     let dateformatter = DateFormatter()
                     let dateDate = dateformatter.date(from: stringdate)
                     PointMark(
-                        x:.value("\(item.intDate)", item.date),
+                        x:.value("\(item.date)", item.date),
                         y:.value("\(item.mmolR)", item.mmolR))
                 }
                 

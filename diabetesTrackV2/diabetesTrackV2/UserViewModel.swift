@@ -8,6 +8,8 @@
 import Foundation
 import Firebase
 import FirebaseFirestore
+import FirebaseCore
+import FirebaseFirestoreSwift
 import SwiftUI
 
 class UserViewModel: ObservableObject {
@@ -95,7 +97,7 @@ class UserViewModel: ObservableObject {
         let curUser = Auth.auth().currentUser
         let uid = curUser?.uid
         
-        db.collection("users").document(uid!).collection("mmolReadings").addSnapshotListener { (querySnapshot, error) in
+        db.collection("users").document(uid!).collection("mmolReadings").order(by: "date", descending: false).addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("No Documents")
                 return
