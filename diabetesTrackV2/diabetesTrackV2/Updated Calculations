@@ -1,0 +1,90 @@
+print("Have you eaten within the last 8 hours?")
+
+if let inputData = readLine(){
+  if inputData.lowercased() == "yes"{
+  print("subject is not fasting")
+//fasting or not eating decreases the blood sugar threashold by 25 - 35 mg/dL
+    //nonfasting calculations
+    
+ print("Please enter mmol/L reading")
+let mmol = Float(readLine()!)!
+
+let bloodglucose = (mmol * 18) //standardized float for non fasting
+
+    if  20 ... 25 ~= BMI {
+print("Your current blood glucose is",bloodglucose + 5.54, "mg/Dl")
+    
+    } else if 29 ... 35 ~= BMI{
+  print("Your current blood glucose is",bloodglucose + 7.24, "mg/Dl")
+  
+    } else if BMI > 35 {
+     print("Your current blood glucose is",bloodglucose + 9.62, "mg/Dl")  
+    
+
+    } else{
+      print("Your current blood glucose is",bloodglucose, "mg/DL")
+    }
+if bloodglucose <= 80{
+  print("Your blood sugar is low")
+
+} else if 81 ... 120 ~= bloodglucose{
+  print("Your blood sugar is normal")
+
+
+
+} else if 121 ... 200 ~= bloodglucose{
+  print("Your blood sugar is too high")
+
+} else{
+  print("Your blood sugar is critical")
+}
+  }
+
+  
+//Fasting calcs
+
+  if inputData.lowercased() == "no"{  
+  print("subject is Fasting")
+   
+//a regular blood glucose reading is between 100 - 125 mg/dL
+
+print("Please enter mmol/L reading")
+
+    let mmol = Float(readLine()!)!
+    
+     let bloodglucose = (mmol * 18)-24.76
+    
+    if  20 ... 25 ~= BMI {
+print("Your current blood glucose is",bloodglucose + 5.54, "mg/Dl")
+    
+    } else if 29 ... 35 ~= BMI{
+  print("Your current blood glucose is",bloodglucose + 7.24, "mg/Dl")
+  
+    } else if BMI > 35 {
+     print("Your current blood glucose is",bloodglucose + 9.62, "mg/Dl")  
+    
+
+    } else{
+      print("Your current blood glucose is",bloodglucose, "mg/DL")
+    }
+    
+//range calcs
+    
+  if bloodglucose <= 70{
+  print("Your blood sugar is low")
+
+} else if 81 ... 100 ~= bloodglucose{
+  print("Your blood sugar is good")
+
+
+} else if 101 ... 125 ~= bloodglucose{
+  print("Your blood sugar is high")
+
+  } else if 126 ... 200 ~= bloodglucose{
+  print("Your blood sugar level is critical")  
+  
+} else{
+  print("Your blood sugar is dangerously high")
+}
+  }
+}
