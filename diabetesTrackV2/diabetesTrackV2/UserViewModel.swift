@@ -64,9 +64,6 @@ class UserViewModel: ObservableObject {
                     self.user.height = documentData?["height"] as! String
                     self.user.dt = documentData?["dt"] as! String
                     self.user.bmi = documentData?["bmi"] as! String
-                    
-                    print(self.user.fn)
-                    
                 }
             }
         }
@@ -97,7 +94,7 @@ class UserViewModel: ObservableObject {
         let curUser = Auth.auth().currentUser
         let uid = curUser?.uid
         
-        db.collection("users").document(uid!).collection("mmolReadings").order(by: "date", descending: false).addSnapshotListener { (querySnapshot, error) in
+        db.collection("users").document(uid!).collection("mmolReadings").order(by: "date", descending: true).limit(to: 10).addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("No Documents")
                 return

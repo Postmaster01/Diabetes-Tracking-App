@@ -25,11 +25,15 @@ struct LoginView: View {
     
     var body: some View {
         NavigationStack (path: $path) {
+            Image("Image")
+                .resizable()
+                .frame(width: 300, height: 300)
+                .padding(.bottom)
             Text("DiaLog")
                 .font(.largeTitle)
                 .foregroundColor(Color("APPColor"))
                 .fontWeight(.bold)
-                .offset(y:-50)
+                .offset(y:-45)
             Group {
                 
                 TextField("Email", text: $email)

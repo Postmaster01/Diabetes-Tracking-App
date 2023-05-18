@@ -42,11 +42,9 @@ struct CalculatorView: View {
                                 isMarked: $answer.wrappedValue == "Yes" ? true : false,
                                 callback: { selected in
                                     self.answer = selected
-                                    print("Selected Gender is: \(selected)")
+                                    print("\(selected)")
                                 }
                             )
-                            
-                            
                             RadioButtonField(
                                 id: "No",
                                 label: "No",
@@ -55,17 +53,13 @@ struct CalculatorView: View {
                                 isMarked: $answer.wrappedValue == "No" ? true : false,
                                 callback: { selected in
                                     self.answer = selected
-                                    print("Selected Gender is: \(selected)")
+                                    print("\(selected)")
                                 }
                             )
-                            
-                            
-                            
                         }
                         .offset(x:75)
                         .padding(.bottom)
                         .font(.title3)
-                        
                         
                         Text("What is your current mmol/L reading? :")
                             .padding(.top)
@@ -134,19 +128,32 @@ struct CalculatorView: View {
             df.dateStyle = DateFormatter.Style.short
             let curDate = df.string(from: date)
             let mmolNum = Double(mmol) ?? 0
-            let mgdlNum = mmolNum * 18
+            var mgdlNum = 0.0
             
+            if answer == "Yes" {
+                mgdlNum = mmolNum * 18
+                if mgdlNum <= 70 {
+                    text = "Your blood sugar level is low"
+                } else if mgdlNum >= 124.5 {
+                    text = "Your blood sugar level is too high"
+                } else {
+                    text = "Your blood sugar level is good"
+                }
+            } else if answer == "No" {
+                mgdlNum = (mmolNum * 18) - 24.74
+                
+                if mgdlNum <= 70 {
+                    text = "Your blood sugar is low"
+                } else {
+                    text = "Your blood sugar is normal"
+                }
+            } else {
+                text = "Please select 'Yes' or 'No'"
+            }
             mgdlCalc = String(mgdlNum)
             mmolO.mmolR = mgdlNum
             mmolO.date = curDate
             mmolO.intDate = intTime
-            print("\(df)")
-            if mgdlNum <= 70 {
-                text = "Your blood sugar is low"
-            } else {
-                text = "Your blood sugar is normal"
-            }
-            
         }
         if !mgdlCalc.isEmpty {
             calcText = "Your current Blood Glucose is (mg/dL): "
